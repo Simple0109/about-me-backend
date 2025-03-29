@@ -1,0 +1,2 @@
+class PortfolioProject < ApplicationRecord
+end

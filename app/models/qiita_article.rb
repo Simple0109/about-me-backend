@@ -1,0 +1,2 @@
+class QiitaArticle < ApplicationRecord
+end
