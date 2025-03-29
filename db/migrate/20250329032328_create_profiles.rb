@@ -7,7 +7,7 @@ class CreateProfiles < ActiveRecord::Migration[7.2]
       t.string :avatar_url
       t.string :location
       t.string :website
-      
+
       t.timestamps
     end
   end
