@@ -1,0 +1,8 @@
+ja:
+  auth:
+    errors:
+      expired_token: "トークンの有効期限が切れています"
+      invalid_signature: "無効なトークン署名です"
+      invalid_token: "無効なトークンです"
+      invalid_credentials: "メールアドレスまたはパスワードが正しくありません"
+      authentication_failed: "認証に失敗しました"
