@@ -22,6 +22,6 @@ module Auth
 
   def self.authenticate(email, password)
     user = User.find_by(email: email)
-    user&.authenticate(password) ? user : { error: I18n.t('auth.errors.invalid_credentials') }
+    user&.authenticate(password) || nil
   end
 end

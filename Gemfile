@@ -40,7 +40,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   gem "jwt", "~> 2.10"
-  gem "bcrypt", "~> 3.1"
+  gem "bcrypt", "~> 3.1", require: true
   gem "rack-cors", "~> 2.0"
   gem "dotenv-rails", "~> 3.1"
 
