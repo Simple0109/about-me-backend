@@ -10,7 +10,7 @@ class UpdateProfile
     profile = user.profile
 
     if profile.nil?
-      return { success: false, error: "Profile not found" }
+      return { success: false, errors: ["Profile not found"] }
     end
 
     if profile.update(params)
