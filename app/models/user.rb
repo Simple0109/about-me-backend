@@ -8,4 +8,8 @@ class User < ApplicationRecord
 
   validates :email, presence: true, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: true
+
+  def generate_token
+    Auth.encode(user_id: id)
+  end
 end

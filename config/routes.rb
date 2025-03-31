@@ -5,6 +5,8 @@ Rails.application.routes.draw do
       post "/login", to: "auth#login"
       post "/signup", to: "auth#signup"
 
+      resource :profile, only: [:show, :create, :update]
+
       # 開発環境のみのテスト用ルート
       if Rails.env.development?
         get "/test_token", to: "auth#test_token"
