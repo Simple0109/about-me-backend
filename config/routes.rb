@@ -7,9 +7,13 @@ Rails.application.routes.draw do
 
       resource :profile, only: [:show, :create, :update]
 
-      # 開発環境のみのテスト用ルート
-      if Rails.env.development?
-        get "/test_token", to: "auth#test_token"
+      resources :github_activities, only: [:index] do
+        collection do
+          get :fetch
+          get :repositories
+          get :commits
+          get :profile
+        end
       end
     end
   end
