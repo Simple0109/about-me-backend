@@ -41,7 +41,7 @@ group :development, :test do
 
   gem "jwt", "~> 2.10"
   gem "bcrypt", "~> 3.1", require: true
-  gem "rack-cors", "~> 2.0"
+  gem "rack-cors", "~> 3.0"
   gem "dotenv-rails", "~> 3.1"
 
   # TEST
