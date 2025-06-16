@@ -39,7 +39,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  gem "jwt", "~> 2.10"
+  gem "jwt", "~> 3.0"
   gem "bcrypt", "~> 3.1", require: true
   gem "rack-cors", "~> 2.0"
   gem "dotenv-rails", "~> 3.1"
